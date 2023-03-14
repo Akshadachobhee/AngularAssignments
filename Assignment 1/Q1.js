@@ -5,26 +5,18 @@ Input : 23 89 6
 Output : Maximum number is 89
 */
 function Maximum(No1, No2, No3) {
+    var max_val = 0;
     if (No1 > No2) {
-        console.log("Largest number is " + No1);
+        max_val = No1;
     }
     else {
-        console.log("Largest Number is " + No2);
+        max_val = No2;
     }
-    if (No2 > No3) {
-        console.log("Largest Number is " + No2);
+    if (No3 > max_val) {
+        max_val = No3;
     }
-    else {
-        console.log("Largest Number is " + No3);
-    }
-    if (No1 > No3) {
-        console.log("Largest Number is " + No1);
-    }
-    else {
-        console.log("Largest Number is " + No3);
-    }
+    return max_val;
 }
-var A = 11;
-var B = 90;
-var C = 54;
-Maximum(A, B, C);
+var ret = 0;
+ret = Maximum(23, 89, 6);
+console.log("Maximum number is " + ret);
