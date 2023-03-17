@@ -8,7 +8,7 @@ function Maximum(Array : number[]) : number
     var max=Array[0] 
     var no
 
-    for(var i =1 ; i<Array.length ; i++) // Array.length = 
+    for(var i =1 ; i<Array.length ; i++) // Array.length = The length property sets or returns the number of elements in an array.
     if(Array[i]>max)
     {
         max=Array[i]
