@@ -5,12 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent
-{
-  data : String = '';
-  fun()
-  {
-   return "Marvellous infosystem"
-  }
-
+export class AppComponent {
+  title = 'Assign8';
 }
